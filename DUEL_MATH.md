@@ -1,7 +1,3 @@
-Here’s your cleaned-up and finalized Markdown version of the document — ready to save as **`DUEL_MATH.md`** or commit to GitHub/Notion.
-
----
-
 ```markdown
 # Duel Math – 2-Player Greedy Game System
 
@@ -47,8 +43,6 @@ Where
 Where  
 - \(N\) = number of betting options (here, 8).  
 
-This ensures the formula reflects average return across all possible bets.
-
 ---
 
 ## 3. Item System
@@ -77,8 +71,6 @@ R = 7.28 / 8 = 0.91
 \[
 1 - 0.91 = 0.09 = 9\%
 \]
-
-✅ *House edge sits in the 9–10 % target range.*
 
 ---
 
@@ -128,7 +120,7 @@ Winner: B
 
 🏆 **Duel Winner:** Player B  
 
-> *Note: This is a single illustrative duel showing volatility; long-term averages converge to the 9 % house edge.*
+> This example illustrates variance; long-term averages converge to a 9 % house edge.
 
 ---
 
@@ -138,8 +130,6 @@ Winner: B
 | European Roulette | 2.7 % |
 | American Roulette | 5.26 % |
 | **Duel System** | **≈ 9 %** |
-
-The slightly higher edge supports sustainability while maintaining exciting multipliers.
 
 ---
 
@@ -162,8 +152,6 @@ Hard Bot EV = −1 %
 
 ```
 
-> Bot advantage offsets the house edge slightly to create fairer AI difficulty tiers.
-
 ---
 
 ## 7. Key Metrics
@@ -181,18 +169,11 @@ Hard Bot EV = −1 %
 ---
 
 ## 8. Optional Extensions
-- **Variance analysis**: Compute σ² of payouts to tune risk curves.  
-- **Provably Fair RNG**: Hash-seeded roll for transparency.  
-- **Risk cap**: Optional round payout limit to control volatility.  
+- **Variance analysis** – compute σ² of payouts to tune risk.  
+- **Provably Fair RNG** – hash-seeded roll for transparency.  
+- **Risk cap** – optional payout limit per round.
 
 ---
 
-### ✅ Summary
-- Mathematical model verified.  
-- EV / House Edge / Probability logic consistent.  
-- Bots and PvP structure balanced for fair gameplay.  
-- Long-term house profitability ≈ 9 %.  
-
-> **Duel Math v1.1 – finalized and verified**
+### Duel Math v1.1 – Finalized
 ```
-
