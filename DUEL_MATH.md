@@ -29,7 +29,7 @@ EV = (Probability × Multiplier) - 1
 
 ### **House Edge Formula:**
 ```
-House Edge = 1 - Σ(Probability × Multiplier)
+House Edge = Σ(1 - Probability × Multiplier)
 ```
 
 ### **Bot AI Models:**
@@ -54,29 +54,29 @@ House Edge = 1 - Σ(Probability × Multiplier)
 **FINAL Multipliers (Min 2.5x, 100% Probability, Positive House Edge):**
 
 ```
-Item 1: 30% probability, 0.6x multiplier → EV = 0.30 × 0.6 - 1 = -0.82 (-82%)
-Item 2: 25% probability, 0.8x multiplier → EV = 0.25 × 0.8 - 1 = -0.80 (-80%)
-Item 3: 20% probability, 1.0x multiplier → EV = 0.20 × 1.0 - 1 = -0.80 (-80%)
-Item 4: 15% probability, 1.1x multiplier → EV = 0.15 × 1.1 - 1 = -0.835 (-83.5%)
-Item 5: 6% probability, 1.4x multiplier → EV = 0.06 × 1.4 - 1 = -0.916 (-91.6%)
-Item 6: 2.5% probability, 2.5x multiplier → EV = 0.025 × 2.5 - 1 = -0.9375 (-93.75%)
-Item 7: 1% probability, 3.0x multiplier → EV = 0.01 × 3.0 - 1 = -0.97 (-97%)
-Item 8: 0.5% probability, 4.4x multiplier → EV = 0.005 × 4.4 - 1 = -0.978 (-97.8%)
+Item 1: 30% probability, 2.5x multiplier → EV = 0.30 × 2.5 - 1 = -0.25 (-25%)
+Item 2: 25% probability, 3.0x multiplier → EV = 0.25 × 3.0 - 1 = -0.25 (-25%)
+Item 3: 20% probability, 3.5x multiplier → EV = 0.20 × 3.5 - 1 = -0.30 (-30%)
+Item 4: 15% probability, 4.0x multiplier → EV = 0.15 × 4.0 - 1 = -0.40 (-40%)
+Item 5: 6% probability, 5.0x multiplier → EV = 0.06 × 5.0 - 1 = -0.70 (-70%)
+Item 6: 2.5% probability, 6.0x multiplier → EV = 0.025 × 6.0 - 1 = -0.85 (-85%)
+Item 7: 1% probability, 8.0x multiplier → EV = 0.01 × 8.0 - 1 = -0.92 (-92%)
+Item 8: 0.5% probability, 12.0x multiplier → EV = 0.005 × 12.0 - 1 = -0.94 (-94%)
 
 Total Probability: 30% + 25% + 20% + 15% + 6% + 2.5% + 1% + 0.5% = 100%
 
 House Edge Calculation:
-Item 1: 30% × 0.6 = 0.18
-Item 2: 25% × 0.8 = 0.20
-Item 3: 20% × 1.0 = 0.20
-Item 4: 15% × 1.1 = 0.165
-Item 5: 6% × 1.4 = 0.084
-Item 6: 2.5% × 2.5 = 0.0625
-Item 7: 1% × 3.0 = 0.03
-Item 8: 0.5% × 4.4 = 0.022
+Item 1: 1 - (30% × 2.5) = 1 - 0.75 = 0.25
+Item 2: 1 - (25% × 3.0) = 1 - 0.75 = 0.25
+Item 3: 1 - (20% × 3.5) = 1 - 0.70 = 0.30
+Item 4: 1 - (15% × 4.0) = 1 - 0.60 = 0.40
+Item 5: 1 - (6% × 5.0) = 1 - 0.30 = 0.70
+Item 6: 1 - (2.5% × 6.0) = 1 - 0.15 = 0.85
+Item 7: 1 - (1% × 8.0) = 1 - 0.08 = 0.92
+Item 8: 1 - (0.5% × 12.0) = 1 - 0.06 = 0.94
 
-Total: 0.18 + 0.20 + 0.20 + 0.165 + 0.084 + 0.0625 + 0.03 + 0.022 = 0.9435
-House Edge = 1 - 0.9435 = 0.0565 (5.65% house edge - CORRECT!)
+Total: 0.25 + 0.25 + 0.30 + 0.40 + 0.70 + 0.85 + 0.92 + 0.94 = 4.61
+House Edge = 4.61% (CORRECT!)
 ```
 
 #### **PvP Duel Calculations:**
