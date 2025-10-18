@@ -26,7 +26,6 @@ Net Performance = (Bet Amount × Multiplier) - Bet Amount
 * **Round Winner:** Higher net performance
 * **Duel Winner:** First to win two rounds
 
----
 
 ## 2. Mathematical Model
 
@@ -125,7 +124,7 @@ Winner: B
 | A      | +260    | −200    | −300    | −240      |
 | B      | −100    | +2820   | +1000   | **+3720** |
 
-🏆 **Duel Winner:** Player B
+ **Duel Winner:** Player B
 
 > Example illustrates variance; long-term averages converge to ~10 % house edge.
 
