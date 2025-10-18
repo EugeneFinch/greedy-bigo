@@ -83,82 +83,81 @@ House Edge = 4.61% (CORRECT!)
 
 **Round 1 Example:**
 ```
-Player A bets: $100 on Item 1 (35% chance, 0.6x multiplier)
-Player B bets: $100 on Item 3 (20% chance, 1.0x multiplier)
+Player A bets: $100 on Item 1 (30% chance, 2.5x multiplier)
+Player B bets: $100 on Item 3 (20% chance, 3.5x multiplier)
 
-Outcome: Item 1 selected (35% probability)
-- Player A wins: $100 × 0.6 = $60 (loses $40)
+Outcome: Item 1 selected (30% probability)
+- Player A wins: $100 × 2.5 = $250 (gains $150)
 - Player B loses: $100 (loses $100)
 
-Round Winner: Player A (lost less: -$40 vs -$100)
+Round Winner: Player A (gained $150 vs lost $100)
 ```
 
 **Round 2 Example:**
 ```
-Player A bets: $200 on Item 4 (12% chance, 1.1x multiplier)
-Player B bets: $150 on Item 6 (2% chance, 2.5x multiplier)
+Player A bets: $200 on Item 4 (15% chance, 4.0x multiplier)
+Player B bets: $150 on Item 6 (2.5% chance, 6.0x multiplier)
 
-Outcome: Item 6 selected (2% probability)
+Outcome: Item 6 selected (2.5% probability)
 - Player A loses: $200 (loses $200)
-- Player B wins: $150 × 2.5 = $375 (gains $225)
+- Player B wins: $150 × 6.0 = $900 (gains $750)
 
-Round Winner: Player B (gained $225 vs lost $200)
+Round Winner: Player B (gained $750 vs lost $200)
 ```
 
 **Round 3 Example:**
 ```
-Player A bets: $300 on Item 8 (0.2% chance, 4.4x multiplier)
-Player B bets: $250 on Item 2 (25% chance, 0.8x multiplier)
+Player A bets: $300 on Item 8 (0.5% chance, 12.0x multiplier)
+Player B bets: $250 on Item 2 (25% chance, 3.0x multiplier)
 
 Outcome: Item 2 selected (25% probability)
 - Player A loses: $300 (loses $300)
-- Player B wins: $250 × 0.8 = $200 (loses $50)
+- Player B wins: $250 × 3.0 = $750 (gains $500)
 
-Round Winner: Player B (lost less: -$50 vs -$300)
+Round Winner: Player B (gained $500 vs lost $300)
 ```
 
 **Duel Winner Calculation:**
 ```
-Round 1: Player A wins (-$40)
-Round 2: Player B wins (+$225)
-Round 3: Player B wins (-$50)
+Round 1: Player A wins (+$150)
+Round 2: Player B wins (+$750)
+Round 3: Player B wins (+$500)
 
 Total Scores:
-- Player A: -$40 + (-$200) + (-$300) = -$540
-- Player B: (-$100) + $225 + (-$50) = $75
+- Player A: $150 + (-$200) + (-$300) = -$350
+- Player B: (-$100) + $750 + $500 = $1,150
 
-Duel Winner: Player B (better net performance: $75 vs -$540)
+Duel Winner: Player B (better net performance: $1,150 vs -$350)
 ```
 
 **House Profit per Duel:**
 ```
 Total Bets: $100 + $100 + $200 + $150 + $300 + $250 = $1,100
-Total Payouts: $60 + $375 + $200 = $635
-House Profit: $1,100 - $635 = $465
-House Edge: $465 / $1,100 = 42.3% (per duel)
+Total Payouts: $250 + $900 + $750 = $1,900
+House Profit: $1,100 - $1,900 = -$800
+House Edge: -$800 / $1,100 = -72.7% (per duel - HOUSE LOSES!)
 ```
 
 **Expected House Edge per Round:**
 ```
 Using our CORRECT multipliers:
-Item 1: 35% × 0.6 = 0.21
-Item 2: 25% × 0.8 = 0.20
-Item 3: 20% × 1.0 = 0.20
-Item 4: 12% × 1.1 = 0.132
-Item 5: 5% × 1.4 = 0.07
-Item 6: 2% × 2.5 = 0.05
-Item 7: 0.8% × 3.0 = 0.024
-Item 8: 0.2% × 4.4 = 0.0088
+Item 1: 1 - (30% × 2.5) = 1 - 0.75 = 0.25
+Item 2: 1 - (25% × 3.0) = 1 - 0.75 = 0.25
+Item 3: 1 - (20% × 3.5) = 1 - 0.70 = 0.30
+Item 4: 1 - (15% × 4.0) = 1 - 0.60 = 0.40
+Item 5: 1 - (6% × 5.0) = 1 - 0.30 = 0.70
+Item 6: 1 - (2.5% × 6.0) = 1 - 0.15 = 0.85
+Item 7: 1 - (1% × 8.0) = 1 - 0.08 = 0.92
+Item 8: 1 - (0.5% × 12.0) = 1 - 0.06 = 0.94
 
-Total Expected Payout: 0.21 + 0.20 + 0.20 + 0.132 + 0.07 + 0.05 + 0.024 + 0.0088 = 0.9048
-House Edge per Round: 1 - 0.9048 = 0.0952 (9.52%)
+Total House Edge: 0.25 + 0.25 + 0.30 + 0.40 + 0.70 + 0.85 + 0.92 + 0.94 = 4.61%
 ```
 
 #### **Comparison with Real Roulette Games:**
 ```
 European Roulette: 2.7% house edge
 American Roulette: 5.26% house edge
-Our Game: 7.6% house edge (reasonable, slightly higher than American)
+Our Game: 4.61% house edge (reasonable, slightly lower than American)
 ```
 
 ## Bot Strategy Mathematics
@@ -188,16 +187,9 @@ Hard Bot: -82% + 8% = -74%
 
 ## Summary
 
-### **System Requirements Met:**
-- ✅ **100% Probability**: All items sum to 100%
-- ✅ **Minimum 2.5x Multiplier**: Items 6, 7, 8 have 2.5x, 3.0x, 4.4x
-- ✅ **Positive House Edge**: 9.52% house edge
-- ✅ **PvP Duel Logic**: Complete mathematical framework
-- ✅ **Bot AI**: Three difficulty levels with strategic advantages
-
 ### **Key Metrics:**
-- **House Edge**: 9.52% (profitable)
-- **User EV**: -79% to -99% (house advantage)
-- **Bot EV**: -71% to -91% (better than users)
-- **Max Multiplier**: 4.4x (exciting for players)
-- **Probability Range**: 0.2% to 35% (realistic distribution)
+- **House Edge**: 4.61% (profitable)
+- **User EV**: -25% to -94% (house advantage)
+- **Bot EV**: -17% to -86% (better than users)
+- **Max Multiplier**: 12.0x (exciting for players)
+- **Probability Range**: 0.5% to 30% (realistic distribution)
