@@ -1,4 +1,3 @@
-```markdown
 # Duel Math – 2-Player Greedy Game System
 
 ## 1. Core Mechanics
@@ -78,38 +77,32 @@ R = 7.28 / 8 = 0.91
 
 ### Round 1
 ```
-
-Player A: $100 on Item 1 (30 %, 3.5×)
-Player B: $100 on Item 3 (15 %, 7×)
+Player A: $100 on Item 1 (30%, 3.5×)
+Player B: $100 on Item 3 (15%, 7×)
 Outcome: Item 1 selected.
 → A wins $350 (+$250)
 → B loses $100
 Winner: A
-
 ```
 
 ### Round 2
 ```
-
-Player A: $200 on Item 4 (10 %, 9×)
-Player B: $150 on Item 6 (5 %, 20×)
+Player A: $200 on Item 4 (10%, 9×)
+Player B: $150 on Item 6 (5%, 20×)
 Outcome: Item 6 selected.
 → A loses $200
 → B wins $3,000 (+$2,850)
 Winner: B
-
 ```
 
 ### Round 3
 ```
-
-Player A: $300 on Item 8 (1 %, 45×)
-Player B: $250 on Item 2 (25 %, 5×)
+Player A: $300 on Item 8 (1%, 45×)
+Player B: $250 on Item 2 (25%, 5×)
 Outcome: Item 2 selected.
 → A loses $300
 → B wins $1,250 (+$1,000)
 Winner: B
-
 ```
 
 **Duel Summary**
@@ -143,13 +136,12 @@ Winner: B
 | **Hard** | High-multiplier | 3–8 | Aggressive | +8 % |
 
 ### EV Adjustment
-Baseline User EV = −9 %  
+Baseline User EV = −9%
+
 ```
-
-Easy Bot EV = −7 %
-Medium Bot EV = −4 %
-Hard Bot EV = −1 %
-
+Easy Bot EV = −7%
+Medium Bot EV = −4%
+Hard Bot EV = −1%
 ```
 
 ---
@@ -158,22 +150,18 @@ Hard Bot EV = −1 %
 
 | Metric | Value |
 |---------|--------|
-| **House Edge** | ~9 % |
-| **Average Return** | 91 % per $1 bet |
-| **User EV Range** | −55 % to +25 % (per item) |
-| **Bot EV Range** | −47 % to +33 % |
+| **House Edge** | ~9% |
+| **Average Return** | 91% per $1 bet |
+| **User EV Range** | −55% to +25% (per item) |
+| **Bot EV Range** | −47% to +33% |
 | **Max Multiplier** | 45× |
-| **Probability Range** | 1 % – 30 % |
-| **Total Probabilities** | 100 % |
+| **Probability Range** | 1% – 30% |
+| **Total Probabilities** | 100% |
 
 ---
 
 ## 8. Optional Extensions
-- **Variance analysis** – compute σ² of payouts to tune risk.  
-- **Provably Fair RNG** – hash-seeded roll for transparency.  
+- **Variance analysis** – compute σ² of payouts to tune risk.
+- **Provably Fair RNG** – hash-seeded roll for transparency.
 - **Risk cap** – optional payout limit per round.
 
----
-
-### Duel Math v1.1 – Finalized
-```
