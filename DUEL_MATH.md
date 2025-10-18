@@ -189,6 +189,3 @@ Hard Bot EV = −2 %
 | **Max Multiplier**      | 44×             |
 | **Probability Range**   | 1 % – 30 %      |
 | **Total Probabilities** | 100 %           |
-
-
-**Duel Math v1.2 – Balanced Edition (Zero-Positive EV + Rake)**
