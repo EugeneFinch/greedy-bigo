@@ -16,40 +16,38 @@
 5. **Duel Winner**: Player who wins two or more rounds.  
 
 ### Scoring
-\[
-\text{Net Performance} = (\text{Bet Amount} \times \text{Multiplier}) - \text{Bet Amount}
-\]
+```
+Net Performance = (Bet Amount × Multiplier) - Bet Amount
+```
 
 - **Round Winner:** Higher net performance  
 - **Duel Winner:** First to win two rounds  
 
----
 
 ## 2. Mathematical Model
 
 ### Expected Value (EV)
-\[
-EV = (p_i \times m_i) - 1
-\]
-Where  
-- \(p_i\) = probability of item  
-- \(m_i\) = multiplier  
+```
+EV = (Probability × Multiplier) - 1
+```
+Where:
+- Probability = chance of item being selected
+- Multiplier = payout ratio for that item
 
 ### House Edge
-\[
-\text{House Edge} = 1 - \frac{\sum(p_i \times m_i)}{N}
-\]
-Where  
-- \(N\) = number of betting options (here, 8).  
+```
+House Edge = 1 - (Sum of all Probability × Multiplier) / Number of Items
+```
+Where:
+- Number of Items = 8 (total betting options)  
 
----
 
 ## 3. Item System
 
 ### Final Multipliers  
 *(Target: ~9–10 % House Edge, 100 % total probability)*
 
-| Item | Probability | Multiplier | EV | \(p_i \times m_i\) |
+| Item | Probability | Multiplier | EV | p × m |
 |------|--------------|-------------|----|--------------------|
 | 1 | 30 % | 3.5× | +5 % | 1.05 |
 | 2 | 25 % | 5.0× | +25 % | 1.25 |
@@ -59,19 +57,18 @@ Where
 | 6 | 5 % | 20.0× | 0 % | 1.00 |
 | 7 | 2 % | 30.0× | −40 % | 0.60 |
 | 8 | 1 % | 45.0× | −55 % | 0.45 |
-| **Σ (p × m)** | 100 % | — | — | **7.28** |
+| **Sum (p × m)** | 100% | — | — | **7.28** |
 
 **Average return per $1 bet (uniform betting):**
-\[
+```
 R = 7.28 / 8 = 0.91
-\]
+```
 
 **House Edge:**
-\[
-1 - 0.91 = 0.09 = 9\%
-\]
+```
+House Edge = 1 - 0.91 = 0.09 = 9%
+```
 
----
 
 ## 4. PvP Duel Examples
 
