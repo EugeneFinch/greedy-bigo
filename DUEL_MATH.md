@@ -51,7 +51,6 @@ Where:
 
 * Number of Items = 8 (total betting options)
 
----
 
 ## 3. Item System
 
@@ -83,7 +82,6 @@ R = 7.16 / 8 = 0.895
 House Edge = 1 - 0.895 = 0.105 = 10.5 %
 ```
 
----
 
 ## 4. PvP Duel Examples
 
@@ -131,7 +129,6 @@ Winner: B
 
 > Example illustrates variance; long-term averages converge to ~10 % house edge.
 
----
 
 ## 5. Comparison with Real Games
 
@@ -141,7 +138,6 @@ Winner: B
 | American Roulette | 5.26 %     |
 | **Duel System**   | **≈ 10 %** |
 
----
 
 ## 6. Bot AI System
 
@@ -160,7 +156,6 @@ Medium Bot EV = −5 %
 Hard Bot EV = −2 %
 ```
 
----
 
 ## 7. Risk-Control & Fairness Practices
 
@@ -182,7 +177,7 @@ Hard Bot EV = −2 %
 * Smooths variance and prevents temporary positive-EV drift from player clustering.
 * Rake is added to the house reserve pool for long-term stability.
 
----
+
 
 ## 8. Key Metrics
 
@@ -196,6 +191,5 @@ Hard Bot EV = −2 %
 | **Probability Range**   | 1 % – 30 %      |
 | **Total Probabilities** | 100 %           |
 
----
 
 **Duel Math v1.2 – Balanced Edition (Zero-Positive EV + Rake)**
